@@ -1,5 +1,5 @@
 {
-  "name": "ssrP",
+  "name": "ssrp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,10 +11,12 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
     "fs": "0.0.1-security",
     "handlebars": "^4.0.12",
     "helmet": "^3.14.0",
     "lodash": "^4.17.11",
+    "mongoose": "^5.3.8",
     "path": "^0.12.7",
     "properties": "^1.2.1"
   }
