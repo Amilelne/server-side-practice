@@ -1,6 +1,8 @@
-<h1>Home page</h1>
-<ul>
-  {{#each records}}
-    <li>date: {{date}}<br />weight: {{weight}}</li>
-  {{/each}}
-</ul>
+<div class="container">
+  <h1>Home page</h1>
+  <ul>
+    {{#each records}}
+      <li>date: {{formatDate date day="numeric" month="long" year="numeric"}}<br />weight: {{weight}}</li>
+    {{/each}}
+  </ul>
+</div>
