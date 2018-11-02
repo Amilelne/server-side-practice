@@ -20,8 +20,9 @@ app.use(helmet());
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
-app.get('/', (req, res) => {
-  let records = getRecords();
+app.get('/', async (req, res) => {
+  let records = await getRecords();
+  console.log(records);
   res.render('home', { records });
 });
 app.get('/add', (req, res) => {

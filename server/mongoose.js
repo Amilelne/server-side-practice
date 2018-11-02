@@ -3,7 +3,6 @@ const { omit } = require('lodash');
 const mongoose = require('mongoose');
 
 const { mongodb } = configure;
-console.log(mongodb);
 for (const key of Object.keys(mongodb)) {
   mongoose.set(key, mongodb[key]);
 }
